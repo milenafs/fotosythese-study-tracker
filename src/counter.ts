@@ -1,13 +1,3 @@
-// export function setupCounter(element: HTMLButtonElement) {
-//   let counter = 0
-//   const setCounter = (count: number) => {
-//     counter = count
-//     element.innerHTML = `count is ${counter}`
-//   }
-//   element.addEventListener('click', () => setCounter(counter + 1))
-//   setCounter(0)
-// }
-
 import createFlowers from "./flower";
 import switchMode from "./modeSwitcher";
 
@@ -36,7 +26,7 @@ export function setupCounter(startButton: HTMLButtonElement, resetButton: HTMLBu
   const start = () => {
     if (!isRunning) {
       switchMode(false);
-      interval = setInterval(updateTimer, 20);
+      interval = setInterval(updateTimer, 1000);
       startButton.innerHTML = '<span class="material-symbols-outlined">pause</span>';
       isRunning = true;
     }else{
