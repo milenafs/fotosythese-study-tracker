@@ -26,10 +26,10 @@
   background-size: contain;
 } 
 .sky-day-mode{
-  background-image: url(./src/assets/images/bg/day-sky.png);
+  background-image: url(./assets/images/bg/day-sky.png);
 }
 .sky-night-mode{
-  background-image: url(./src//assets/images/bg/night-sky.png);
+  background-image: url(./assets/images/bg/night-sky.png);
 }
 #timer{
   margin-top: 10.5%;
