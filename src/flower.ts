@@ -11,7 +11,7 @@ export default function createFlowers (hours:number, minutes: number, seconds: n
     const generateRandomFlower = () => {
         let randomNum = Math.floor(Math.random()*19 + 1);
         document.querySelector<HTMLDivElement>('.grow-flower')?.classList.remove('grow-flower');
-        farm.innerHTML += Flower(`./assets/images/flowers/${randomNum}.png`,'+ O2');
+        farm.innerHTML += Flower(`./src/assets/images/flowers/${randomNum}.png`,'+ O2');
     }
     
     if(minutes % 15 === 0.0){
