@@ -26,7 +26,7 @@ export function setupCounter(startButton: HTMLButtonElement, resetButton: HTMLBu
   const start = () => {
     if (!isRunning) {
       switchMode(false);
-      interval = setInterval(updateTimer, 1000);
+      interval = setInterval(updateTimer, 10);
       startButton.innerHTML = '<span class="material-symbols-outlined">pause</span>';
       isRunning = true;
     }else{
