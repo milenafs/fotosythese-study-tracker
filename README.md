@@ -25,7 +25,7 @@ Basicaly, you have to create a `.github\workflows\deploy.yml` and a `vite.config
 ### 2. Some images weren't loading on the github page...
 Solution: https://vitejs.dev/guide/assets.html
 
-The images that weren't loading were not imported directly on the code but just being referenced, which made them not load properly after the deployment. The solution is that everything that you are going to use after the building by a reference path, which means that they are not being imported through `import {} from "";` or `url()`, you should put them inside the `/public` folder. By doing this, the code can find them by their name you have put on the reference path. 
+The images that weren't loading were not imported directly on the code but just being referenced, which made them not load properly after the deployment. The solution is that everything that you are going to use after the building by a reference path, which means that they are not being imported through `import {} from "";` or `url()`, you should put them inside the `/public` folder. By doing this, the code can find them by the name you have put on the reference path. 
 
 In other words, the reason why the project couldn't load my images properly was because the images names have changed through the building process and the code couldn't find them by the path that I've referenced and after putting them inside the `/public` folder their names became unchanged. That is what I have understood :]
 
