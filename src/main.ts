@@ -1,4 +1,4 @@
-import './style.css'
+import './style.scss'
 import { setupCounter } from './counter.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
