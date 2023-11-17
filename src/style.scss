@@ -145,3 +145,78 @@ $sky-night-color: #03045E;
     opacity: 0;
   }
 }
+/* menu */
+.menu{
+  right: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 10px;
+  button{
+    color: white;
+    background-color: inherit;
+    border: none;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+  }
+  button:active{
+    border-right: 3px solid whitesmoke;
+  }
+}
+.menu-btn-selected{
+  border-right: 3px solid whitesmoke;
+}
+/* modal */
+.modal{
+  position: fixed;
+  background-color: #e1e1e1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 15px 55px 15px 15px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 1px 1px 10px rgba(54, 54, 54, 0.585);
+  transition: all 0.5s;
+}
+.modal-open {animation: modal-open 0.5s infinite;}
+@keyframes modal-open {
+  from{
+    opacity: 0;
+    margin-bottom: 100vw;
+  }
+}
+.modal-close {animation: modal-close 0.5s infinite;}
+@keyframes modal-close {
+  to{
+    opacity: 0;
+    margin-bottom: 100vw;
+  }
+}
+
+/* iframe */
+.youtube-iframe {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    pointer-events: none;
+    animation: fadeIn 2.5s;
+  }
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
