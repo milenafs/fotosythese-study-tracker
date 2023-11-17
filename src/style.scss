@@ -17,10 +17,12 @@ $sky-night-color: #03045E;
 
 .bg-day-mode {
   background-color: $sky-day-color;
+  
 }
 
 .bg-night-mode {
   background-color: $sky-night-color;
+  filter: brightness(0.4);
 }
 
 .sky{
@@ -63,10 +65,11 @@ $sky-night-color: #03045E;
     span{
       font-size: 3vw;
     }
-  }
 
-  button:hover{
-    color:#505050;
+    :hover{
+      color:#505050;
+      cursor: pointer;
+    }
   }
 }
 
@@ -132,7 +135,7 @@ $sky-night-color: #03045E;
   }
   to{
     opacity: 0.7;
-    margin-top: -15px;
+    margin-top: 0px;
   }
 }
 

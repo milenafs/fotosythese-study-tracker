@@ -15,6 +15,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     <span class="material-symbols-outlined">stop</span>
                 </button>
             </div>
+        <div class="flower flower-night-mode">
+        <h3>+ O2</h3>
+        <img src="1.png"/>
+        </div>
     </div>
 </div>
 `
