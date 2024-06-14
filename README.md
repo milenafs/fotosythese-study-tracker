@@ -1,4 +1,4 @@
-# The Fotosythese Study Tracker 🌿✨
+# The Fotosynthese Study Tracker 🌿✨
 > This project's goal was to train my TypeScript skills while having some fun coding.
 > I am currently studying for Vestibular and I thought it would be funny to do a study time tracker just like the famous _Forest_ app.
 
